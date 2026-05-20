@@ -32,6 +32,7 @@ display:flex;
 justify-content:center;
 gap:40px;
 padding:15px;
+-webkit-backdrop-filter:blur(10px);
 backdrop-filter:blur(10px);
 background:rgba(0,0,0,0.4);
 box-shadow:0 0 20px #2ecc71;
@@ -53,6 +54,11 @@ color:#2ecc71;
 
 section{
 padding:80px 10%;
+}
+
+/* Utility */
+.section-title{
+    text-align:center;
 }
 
 /* HOME */
@@ -89,16 +95,16 @@ color:#a8f0c6;
 
 /* CARD */
 
-.card{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
-border:1px solid rgba(46,204,113,0.3);
-padding:30px;
-border-radius:15px;
-margin-top:30px;
-box-shadow:0 0 25px rgba(46,204,113,0.3);
-transition:.4s;
-}
+.card{ background:rgba(255,255,255,0.05);
+     -webkit-backdrop-filter:blur(15px);
+      backdrop-filter:blur(15px);
+       border:1px solid rgba(46,204,113,0.3);
+        padding:30px;
+         border-radius:15px;
+          margin-top:30px;
+           box-shadow:0 0 25px rgba(46,204,113,0.3);
+            transition:.4s;
+    }
 
 .card:hover{
 transform:translateY(-10px);
@@ -419,6 +425,7 @@ margin-top:40px;
 
 .skill-card{
 background:rgba(255,255,255,0.06);
+-webkit-backdrop-filter:blur(10px);
 backdrop-filter:blur(10px);
 border:1px solid rgba(46,204,113,0.3);
 padding:25px;
@@ -460,6 +467,7 @@ margin-top:40px;
 
 .skill-card{
 background:rgba(255,255,255,0.05);
+-webkit-backdrop-filter:blur(15px);
 backdrop-filter:blur(15px);
 border:1px solid rgba(46,204,113,0.3);
 color:white;
@@ -518,6 +526,12 @@ font-size:14px;
     gap: 20px;
     justify-content: center;
 }
+
+/* CONTACT TITLE */
+.contact-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
 </style>
 
 </head>
@@ -544,7 +558,7 @@ font-size:14px;
 <section id="home" class="home">
 
 <div class="profile">
-<img src="doll.jpg">
+<img src="doll.jpg" alt="Profile photo of Priyadharshini J" title="Profile photo of Priyadharshini J">
 </div>
 
 <h1>Priyadharshini J</h1>
@@ -557,14 +571,14 @@ building modern web applications and learning new technologies.
 </p>
 <br>
 
-<a href="new resume.pdf" download class="resume-btn">
+<a href="PRIYADHARSHINI_J_JAVA_DEVELOPER_RESUME_PDF1.pdf" download class="resume-btn">
 📄 Download Resume
 </a>
 
 </section>
 
 
-<!------------------- ABOUT ---------------------------- -->
+<!------------------- ABOUT ------------------------------>
 
 <section id="about">
 
@@ -588,11 +602,11 @@ Quick learner eager to contribute to software development teams and build scalab
 
 <hr class="section-divider">
 
-<!-- ------------------------SKILLS -------------------------->
+<!------------------------ SKILLS -------------------------->
 
 <section id="skills">
 
-<h2 style="text-align:center;">Technical Skills</h2>
+<h2 class="section-title">Technical Skills</h2>
 
 <div class="skills-container">
 
@@ -662,9 +676,10 @@ Quick learner eager to contribute to software development teams and build scalab
 <p class="duration">Jan 2026 – Present</p>
 
 <p>
-Working on Java Full Stack technologies including HTML, CSS, JavaScript, React, 
-Java, and MySQL. Developing responsive web applications and learning backend 
-API integration.
+<p>• Developed responsive web applications using HTML5, CSS3, JavaScript, and Bootstrap. </p>
+<p>• Worked with Core Java concepts for application development and debugging. </p>
+<p>• Used Git and GitHub for version control and team collaboration. </p>
+<p>• Participated in testing, bug fixing, and SDLC activities. </p>
 </p>
 
 </div>
@@ -678,10 +693,12 @@ API integration.
 <p class="duration">nov 2024 – may 2025</p>
 
 <p>
-  Southern Railway Madurai Division, Madurai, Tamil Nadu, India  
-  Assisted in developing web applications using .NET and PHP 
-  Supported testing, debugging, and documentation of project workflows 
-  Implemented user feedback improvements to enhance application usability 
+   <p> Southern Railway Madurai Division, Madurai, Tamil Nadu, India</p>
+
+<p>• Assisted in developing software applications using Java and .NET technologies. </p>
+<p>• Supported testing, debugging, and database integration processes. </p>
+<p>• Improved application functionality based on user requirements and feedback. </p>
+<p>• Contributed to project documentation and software maintenance activities. </p>
 </p>
 
 </div>
@@ -705,7 +722,11 @@ API integration.
 <div class="project project-hover">
 
 <h3>ID Card Generator System</h3>
-
+<a href="https://github.com/priya-priyadharshini/The-Maximizered-System-for-Personal-Branch-SR.DPO-.git" 
+    target="_blank" rel="noopener"
+    class="github-link">
+    🔗 GitHub
+</a>
 <p class="project-short">
 Automates staff ID card generation for Southern Railway Madurai Division.
 </p>
@@ -753,7 +774,150 @@ application to view their voting booth location.
 </div>
 
 <!------------------------------>
+<div class="project project-hover">
+<h3>Airline Reservation System</h3>
 
+<a href="https://github.com/priya-priyadharshini/Airline-Reservation-System.git" 
+    target="_blank" rel="noopener"
+    class="github-link">
+    🔗 GitHub
+</a>
+<p class="project-short">
+A web-based system for managing airline reservations and bookings.
+</p>
+
+<div class="project-full">
+<p>The Airline Reservation System is designed to manage airline booking activities digitally and efficiently.</p>
+<p>The application provides functionalities for user authentication, flight search, ticket booking, cancellation, passenger management, and payment processing.</p>
+<p>Admin users can manage flight schedules, update flight information, and monitor reservations through a centralized dashboard.</p>
+
+<p>The project follows the MVC architecture using Spring Boot and integrates MySQL for database management.</p>
+<p>The frontend is developed with HTML, CSS, Bootstrap, and Thymeleaf to provide responsive and interactive user interfaces.</p>
+ Hibernate and JPA are used for object-relational mapping and database operations.
+  The system improves data management, reduces manual effort, and ensures secure and efficient airline reservation handling.
+
+</div>
+
+<p><b>Tech:</b>
+    <p> Frontend  : HTML, CSS, Bootstrap, Thymeleaf</p>
+    <p>Backend   : Java, Spring Boot</p>
+    <p>Database  : MySQL</p>
+    <p>ORM       : Hibernate, JPA</p>
+    <p>Tools     : Maven, Postman, Git, GitHub, IntelliJ IDEA / VS Code</p>
+</p>
+
+</div>
+
+<!------------------------------>
+
+<div class="project project-hover">
+<h3>Banking Management System</h3>
+<a href="https://github.com/priya-priyadharshini/Banking-Management-System.git" 
+    target="_blank" rel="noopener"
+    class="github-link">
+    🔗 GitHub
+</a>
+<p class="project-short">
+Developed a Java console-based application to manage customer accounts, deposits, withdrawals, balance inquiries, and transaction 
+records using Object-Oriented Programming concepts. 
+</p>
+
+<div class="project-full">
+<p>Developed a Java console-based banking application that enables users to create and manage customer accounts efficiently. </p>
+<p>The application implements core banking functionalities such as deposits, withdrawals, balance inquiries, fund management, and transaction history tracking using Object-Oriented Programming principles.</p>
+<p>Designed a menu-driven interface for smooth user interaction and applied concepts like classes, objects, inheritance, encapsulation, and exception handling to ensure modularity and reliability. </p>
+<p>The system maintains customer and transaction records with proper validation and error handling for secure and accurate operations. </p>
+
+
+</div>
+
+<p><b>Tech:</b> Core Java, OOP Concepts, Collections Framework, Exception Handling</p>
+
+</div>
+
+
+<!------------------------------>
+
+
+<div class="project project-hover">
+<h3> Theater Ticket Booking System</h3>
+<a href="https://github.com/priya-priyadharshini/Theater-Ticket-Booking-System.git" 
+    target="_blank" rel="noopener"
+    class="github-link">
+    🔗 GitHub
+</a>
+<p class="project-short">
+Created a Java console application to manage movie schedules, seat reservations, ticket booking, and cancellation through a menu- 
+driven system. 
+</p>
+
+<div class="project-full">
+<p>Developed a Java console-based application for managing movie ticket reservations through a user-friendly menu-driven interface.</p>
+<p>Implemented functionalities such as movie schedule management, seat availability checking, ticket booking, cancellation, and customer reservation tracking.</p>
+<p>Designed the system using Core Java concepts with proper class structures, conditional statements, loops, and arrays/collections to handle booking operations efficiently.</p>
+<p>Added input validation and exception handling to ensure smooth and error-free user interaction while maintaining accurate booking records.</p>
+
+</div>
+
+<p><b>Tech:</b> Core Java, OOP Concepts, Collections Framework, Exception Handling</p>
+
+</div>
+
+<!------------------------------>
+
+
+<div class="project project-hover">
+<h3> Inventory Management System</h3>
+<a href="https://github.com/priya-priyadharshini/Inventory-Management-System.git" 
+    target="_blank" rel="noopener"
+    class="github-link">
+    🔗 GitHub
+</a>
+<p class="project-short">
+Built a Java console-based inventory application to manage product details, stock availability, sales records, and inventory updates 
+efficiently. 
+</p>
+
+<div class="project-full">
+<p>Built a Java console-based inventory management application to efficiently handle product details, stock availability, sales tracking, and inventory updates through a menu-driven interface.</p>
+<p>Implemented features for adding, updating, deleting, and searching products while maintaining accurate stock records and sales information.</p>
+<p>Applied Object-Oriented Programming concepts to design modular and reusable classes for product and inventory operations.</p>
+<p>Integrated input validation and exception handling to ensure reliable performance and error-free user interaction.</p>
+<p>The system helps streamline inventory monitoring and improves stock management efficiency.</p>
+
+</div>
+
+<p><b>Tech:</b> Core Java, OOP Concepts, Collections Framework, Exception Handling</p>
+
+</div>
+
+<!------------------------------>
+
+<div class="project project-hover">
+<h3> Daily Task Tracker Application</h3>
+<a href="https://github.com/priya-priyadharshini/Daily-Task-Tracker-Application.git" 
+    target="_blank" rel="noopener"
+    class="github-link">
+    🔗 GitHub
+</a>
+<p class="project-short">
+Developed a task management system to add, update, delete, and track daily tasks using menu-driven operations and OOP principles. 
+</p>
+
+<div class="project-full">
+<p>Developed a Java console-based task management application to organize and track daily tasks efficiently through a menu-driven interface.</p>
+<p>Implemented functionalities to add, update, delete, search, and monitor task status, enabling users to manage their activities effectively.</p>
+<p>Applied Object-Oriented Programming principles such as encapsulation, inheritance, and class-based design to create a modular and maintainable system architecture.</p>
+<p>Integrated input validation and exception handling to ensure smooth user interaction and reliable task management operations.</p>
+<p>The application improves productivity by simplifying task scheduling and tracking processes.</p>
+
+</div>
+
+<p><b>Tech:</b> Core Java, OOP Concepts</p>
+
+</div>
+
+<!------------------------------>
 
 <div class="project project-hover">
 <h3>Arduino Alcohol Detection System</h3>
@@ -777,7 +941,11 @@ the driver's GPS location using GSM technology for safety monitoring.</p>
 <!------------------------------------->
 <div class="project project-hover">
 <h3>Library Management System</h3>
-
+<a href="https://github.com/priya-priyadharshini/library-management-system-java.git" 
+    target="_blank" rel="noopener"
+    class="github-link">
+    🔗 GitHub
+</a>
 <p class="project-short">
 Developed a web-based system to manage library books, authors, staff, and students. 
 The application tracks book availability and maintains records of issued and returned books.
@@ -894,7 +1062,7 @@ class="contact-card"
 target="_blank">
 <span>💼</span>
 <h4>LinkedIn</h4>
-<p>linkedin.com/in/priyadharshini-j-978206262</p>
+<p>linkedin.com/in/priyadharshini-j</p>
 </a>
 
 <a
@@ -925,7 +1093,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!typingElement) return;
 
-  const text = ["MCA Graduate","Java Full Stack Developer","Frontend Developer"];
+  const text = ["MCA Graduate","Java Full Stack Developer","Frontend Developer","Backend Developer","Tech Enthusiast"];
 
   let i = 0;
   let j = 0;
